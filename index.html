@@ -1,28 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Form</title>
+	<title>A Monk in Cloud</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-
-    <form>
-        <!-- Name Field -->
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" placeholder="Enter your name" required>
-
-        <!-- Button -->
-        <button type="button" onclick="submitForm()">Submit</button>
-    </form>
-
-    <script>
-        function submitForm() {
-            // You can perform actions when the button is clicked
-            var name = document.getElementById("name").value;
-            alert("Hello, " + name + "! Form submitted.");
-        }
-    </script>
-
+	<header>
+		<h1>Greeting App</h1>
+        <div class="counter-number">Views</div>
+	</header>
+	<main>
+		<form>
+			<label for="name">Name:</label>
+			<input type="text" id="name" name="name">
+			<button id="submit-btn">Submit</button>
+		</form>
+		<p id="greeting"></p>
+	</main>
+	<script src="script.js"></script>
 </body>
 </html>
+ 
